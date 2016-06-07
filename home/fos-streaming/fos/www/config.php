@@ -4,7 +4,7 @@ include('_start.php');
 $databasemanagar->addConnection([
     'driver'    => 'mysql',
     'host'      => 'localhost',
-    'database'  => 'fos',
+    'database'  => 'nombre database',
     'username'  => 'user',
     'password'  => 'pass mysql',
     'charset'   => 'utf8',
