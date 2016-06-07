@@ -11,15 +11,15 @@
                         <h2>{{ $title }} </h2>
                         <ul class="nav navbar-right panel_toolbox">
                             <a class="btn btn-round btn-primary" href="manage_stream.php" title="Add">
-                                Add stream
+                                Nuevo stream
                             </a>
                         </ul>
                         <div class="clearfix"></div>
                     </div>
                     <form action=""method="post">
-                        <input type="submit" name="mass_start" value="Mass start" class="btn btn-small btn-success" onclick="return confirm('Are you sure?')">
-                        <input type="submit" name="mass_stop" value="Mass stop" class="btn btn-small btn-danger" onclick="return confirm('Are you sure?')">
-                        <input type="submit" name="mass_delete" value="Mass delete" class="btn btn-small btn-danger" onclick="return confirm('Are you sure?')">
+                        <input type="submit" name="mass_start" value="Iniciar" class="btn btn-small btn-success" onclick="return confirm('estas seguro?')">
+                        <input type="submit" name="mass_stop" value="Parar" class="btn btn-small btn-danger" onclick="return confirm('estas seguro?')">
+                        <input type="submit" name="mass_delete" value="Borrar" class="btn btn-small btn-danger" onclick="return confirm('estas seguro?')">
                         @if(count($streams) > 0)
                             @if($message)
                                 <div class="alert alert-{{ $message['type'] }}">
@@ -35,9 +35,9 @@
                                     <th>
                                         <input type="checkbox" id="check-all" class="flat">
                                     </th>
-                                    <th>Name</th>
-                                    <th>Status</th>
-                                    <th>Category</th>
+                                    <th>Nombre</th>
+                                    <th>Estado</th>
+                                    <th>Categoria</th>
                                     <th>Video</th>
                                     <th>Audio</th>
                                     <th class=" no-link last"><span class="nobr">Action</span>
@@ -80,16 +80,16 @@
                                         </td>
                                         <td class="center">
                                             @if($stream->status == 1)
-                                                <a class="btn btn-danger" title="STOP STREAM" href="streams.php?stop={{ $stream->id }}">Stop</a>
+                                                <a class="btn btn-danger" title="STOP STREAM" href="streams.php?stop={{ $stream->id }}">Parar</a>
                                             @elseif ($stream->status != 1)
-                                                <a class="btn btn-success" title="START STREAM" href="streams.php?start={{ $stream->id }}">Start</a>
+                                                <a class="btn btn-success" title="START STREAM" href="streams.php?start={{ $stream->id }}">Iniciar</a>
                                             @endif
 
                                             <a class="btn btn-info" href="manage_stream.php?id={{ $stream->id }}" title="Edit">
-                                                Edit
+                                                Editar
                                             </a>
-                                            <a class="btn btn-danger" href="streams.php?delete={{ $stream->id }}" title="Delete" onclick="return confirm('Are you sure?')">
-                                                Remove
+                                            <a class="btn btn-danger" href="streams.php?delete={{ $stream->id }}" title="Delete" onclick="return confirm('estas seguro?')">
+                                                Borrar
                                             </a>
 
                                         </td>

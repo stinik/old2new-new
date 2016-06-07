@@ -9,7 +9,7 @@
                     <h2>Users </h2>
                     <ul class="nav navbar-right panel_toolbox">
                         <a class="btn btn-round btn-primary" href="manage_user.php" title="Add">
-                            Add user
+                            Crear usuario
                         </a>
                     </ul>
                     <div class="clearfix"></div>
@@ -26,17 +26,17 @@
                             <thead>
                                 <tr class="headings">
                                     <th>#</th>
-                                    <th>Name</th>
-                                    <th>Password</th>
-                                    <th>Status</th>
-                                    <th>Exp date</th>
-                                    <th>Category</th>
-                                    <th>File</th>
-                                    <th>Last viewed channel</th>
-                                    <th>Limit</th>
+                                    <th>Nombre</th>
+                                    <th>Pass</th>
+                                    <th>Estado</th>
+                                    <th>Caduca</th>
+                                    <th>Categoria</th>
+                                    <th>Archivo</th>
+                                    <th>Ultimo canal visto</th>
+                                    <th>Limite</th>
                                     <th>IP</th>
                                     <th>User agent</th>
-                                    <th class=" no-link last"><span class="nobr">Action</span></th>
+                                    <th class=" no-link last"><span class="nobr">Accion</span></th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -47,9 +47,9 @@
                                     <td class="center">{{ $user->password }}</td>
                                     <td class="center">
                                         @if($user->active)
-                                            <span class="label label-success">Active</span>
+                                            <span class="label label-success">Activado</span>
                                         @else
-                                            <span class="label label-important">Not Active</span>
+                                            <span class="label label-important">Not Activado</span>
                                         @endif
                                     </td>
                                     <td class="center">
@@ -60,7 +60,7 @@
                                                 <span class="label label-success">{{ $user->exp_date }}</span>
                                             @endif
                                         @else
-                                            <span class="label label-success">Unlimited</span>
+                                            <span class="label label-success">Ilimitado</span>
                                         @endif
                                     </td>
                                     <td class="center">{{ $user->category_names }}</td>
@@ -78,8 +78,8 @@
                                     <td class="center"> @if($user->lastconnected_ip) {{ $user->lastconnected_ip }} @else Never connected @endif </td>
                                     <td class="center"> @if($user->useragent) {{ $user->useragent }} @else Never connected @endif </td>
                                     <td class="center">
-                                        <a class="btn btn-info" href="manage_user.php?id={{ $user->id }}" title="Edit">Edit</a>
-                                        <a class="btn btn-danger" href="users.php?delete={{ $user->id }}" title="Delete" onclick="return confirm('Are you sure?')">Remove</a>
+                                        <a class="btn btn-info" href="manage_user.php?id={{ $user->id }}" title="Edit">Editar</a>
+                                        <a class="btn btn-danger" href="users.php?delete={{ $user->id }}" title="Delete" onclick="return confirm('Are you sure?')">Borrar</a>
                                     </td>
                                 </tr>
                             @endforeach
@@ -111,7 +111,7 @@
                     <p><textarea name="" id="testAU2" class="col-md-12" rows="3"></textarea></p>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
                 </div>
             </div>
 

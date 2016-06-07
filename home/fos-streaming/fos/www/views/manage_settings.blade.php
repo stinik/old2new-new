@@ -5,7 +5,7 @@
         <div class="col-md-12 col-sm-12 col-xs-12">
             <div class="x_panel">
                 <div class="x_title">
-                    <h2>Settings</h2>
+                    <h2>Ajustes</h2>
 
                     <div class="clearfix"></div>
                 </div>
@@ -34,12 +34,12 @@
                     </div>
 
                     <div class="form-group">
-                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">Web ip: <span class="required">*</span>
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">IP web: <span class="required">*</span>
                         </label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
                             <input type="text" class="form-control col-md-7 col-xs-12" name="webip" value="{{  isset($_POST['webip']) ?  $_POST['webip'] : $setting->webip}}">
                         </div>
-                        (Without backslash on the end) example: example.com (NOT example.com/)
+                        (No poner / al final) ejemplo: ejemplo.com (No ejemplo.com/)
                     </div>
 
                     <div class="form-group">
@@ -47,16 +47,16 @@
                         </label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
                             <input type="text" class="form-control col-md-7 col-xs-12" name="webport" value="{{  isset($_POST['webport']) ?  $_POST['webport'] : $setting->webport}}">
-                            <span class="label label-important">Important: restart nginx manualy ( killall -9 nginx && /usr/local/nginx/sbin/nginx )</span>
+                            <span class="label label-important">Importante: resetear nginx manual ( killall -9 nginx && /usr/local/nginx/sbin/nginx )</span>
                         </div>
                     </div>
 
                     <div class="form-group">
-                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">HLS folder: <span class="required">*</span>
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">Carpeta HLS: <span class="required">*</span>
                         </label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
                             <input type="text" class="form-control col-md-7 col-xs-12" name="hlsfolder" value="{{  isset($_POST['hlsfolder']) ?  $_POST['hlsfolder'] : $setting->hlsfolder}}">
-                            <span class="label label-important">Important: cannot be changed (BUG) hl</span>
+                            <span class="label label-important">Importante: no se puede cambia (BUG) hl</span>
                         </div>
                     </div>
 
@@ -71,7 +71,7 @@
                     <div class="ln_solid"></div>
                     <div class="form-group">
                         <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3">
-                            <button type="submit" name="submit" class="btn btn-success">Submit</button>
+                            <button type="submit" name="submit" class="btn btn-success">Guardar</button>
                         </div>
                     </div>
 

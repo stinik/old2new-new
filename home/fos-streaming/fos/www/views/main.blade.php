@@ -63,22 +63,22 @@
                     <div class="menu_section">
                         <h3>General</h3>
                         <ul class="nav side-menu">
-                            <li><a href="index.php"><i class="fa fa-dashboard"></i> Dashboard </a></li>
+                            <li><a href="index.php"><i class="fa fa-dashboard"></i> Informacion del Sistema </a></li>
                             <li><a href="streams.php"><i class="fa  fa-upload"></i> Streams </a></li>
-                            <li><a href="activities.php"><i class="fa fa-toggle-right"></i> Activities </a></li>
-                            <li><a href="users.php"><i class="fa fa-users"></i> Users </a></li>
-                            <li><a href="categories.php"><i class="fa fa-list"></i> Categories </a></li>
-                            <li><a href="transcodes.php"><i class="fa fa-reorder"></i> Transcode profiles </a></li>
-                            <li><a href="stream_importer.php"><i class="fa fa-archive"></i> Playlist importer </a></li>
+                            <li><a href="activities.php"><i class="fa fa-toggle-right"></i> Actividades </a></li>
+                            <li><a href="users.php"><i class="fa fa-users"></i> Usuarios </a></li>
+                            <li><a href="categories.php"><i class="fa fa-list"></i> Categorias </a></li>
+                            <li><a href="transcodes.php"><i class="fa fa-reorder"></i> Transcode perfiles </a></li>
+                            <li><a href="stream_importer.php"><i class="fa fa-archive"></i> Importar Archivo </a></li>
 
                             <li><a href="admins.php"><i class="fa fa-user"></i> Admin's </a></li>
-                            <li><a href="ipblocks.php"><i class="fa fa-exclamation-triangle"></i> Ipblock </a></li>
+                            <li><a href="ipblocks.php"><i class="fa fa-exclamation-triangle"></i> Bloquear IP </a></li>
                             <li><a href="useragentblocks.php"><i class="fa fa-exclamation-triangle"></i> User agent block </a></li>
-                            <li><a href="settings.php"><i class="fa fa-cog"></i> Settings </a></li>
+                            <li><a href="settings.php"><i class="fa fa-cog"></i> Ajustes </a></li>
                         </ul>
                     </div>
                     <div class="menu_section">
-                        <h3>Extra information</h3>
+                        <h3>Informacion Extra</h3>
                         <ul class="nav side-menu">
                             <li><a target="_new" href="http://fos-streaming.com"><i class="fa fa-laptop"></i> Website </a></li>
                             <li><a target="_new" href="https://github.com/zgelici/FOS-Streaming-v1/issues"><i class="fa fa-exclamation-triangle"></i> Report </a></li>

@@ -5,7 +5,7 @@
             <div class="col-md-12 col-sm-12 col-xs-12">
                 <div class="x_panel">
                     <div class="x_title">
-                        <h2>Manage transcodeprofile</h2>
+                        <h2>Configuracion perfil transcode</h2>
 
                         <div class="clearfix"></div>
                     </div>
@@ -23,21 +23,21 @@
 
 
                                 <div class="form-group">
-                                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Profile name <span class="required">*</span></label>
+                                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Nombre perfil <span class="required">*</span></label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
                                         <input type="text" name="profilename" class="form-control col-md-7 col-xs-12"  value="{{  isset($_POST['name']) ?  $_POST['name'] : $transcode->name }}">
                                     </div>
                                 </div>
 
                                 <div class="form-group">
-                                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Analyzeduration <span class="required">*</span></label>
+                                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">duracion de Analizado <span class="required">*</span></label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
                                         <input type="number" name="probesize" class="form-control col-md-7 col-xs-12" placeholder="15000000" value="{{  isset($_POST['probesize']) ?  $_POST['probesize'] : $transcode->probesize ? $transcode->probesize : "15000000" }}" >
                                     </div>
                                 </div>
 
                                 <div class="form-group">
-                                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Probesize <span class="required">*</span></label>
+                                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">prueba size <span class="required">*</span></label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
                                         <input type="number" name="analyzeduration" class="form-control col-md-7 col-xs-12" placeholder="12000000" value="{{  isset($_POST['analyzeduration']) ?  $_POST['analyzeduration'] : $transcode->analyzeduration ? $transcode->analyzeduration : "12000000" }}" >
                                     </div>
@@ -67,7 +67,7 @@
                                 </div>
 
                                 <div class="form-group">
-                                    <label class="control-label col-md-3 col-sm-3 col-xs-12">Profile</label>
+                                    <label class="control-label col-md-3 col-sm-3 col-xs-12">Perfil</label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
                                         <select name="profile" class="form-control">
                                             <option value="" {{ isset($_POST['profile']) ?  $_POST['profile']  == '' : $transcode->profile  == '' ? "selected" : "" }}>Disable</option>
@@ -77,7 +77,7 @@
                                 </div>
 
                                 <div class="form-group">
-                                    <label class="control-label col-md-3 col-sm-3 col-xs-12">Preset</label>
+                                    <label class="control-label col-md-3 col-sm-3 col-xs-12">Programar</label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
                                         <select name="preset_values" class="form-control">
                                             <option value="" {{ isset($_POST['preset_values']) ?  $_POST['preset_values']  == '' : $transcode->preset_values  == '' ? "selected" : "" }}>Disable</option>
@@ -98,7 +98,7 @@
 
 
                                 <div class="form-group">
-                                    <label class="control-label col-md-3 col-sm-3 col-xs-12">Scalling</label>
+                                    <label class="control-label col-md-3 col-sm-3 col-xs-12">Escalar</label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
                                         <select name="scalling" class="form-control">
                                             <option value="" {{ isset($_POST['scalling']) ?  $_POST['scalling']  == '' : $transcode->scale  == '' ? "selected" : "" }}>Disable</option>
@@ -245,7 +245,7 @@
                                 <div class="ln_solid"></div>
                                 <div class="form-group">
                                     <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3">
-                                        <button type="submit" name="submit" class="btn btn-success">Submit</button>
+                                        <button type="submit" name="submit" class="btn btn-success">Editar</button>
                                     </div>
                                 </div>
 
@@ -253,7 +253,7 @@
                         @else
                             <div class="alert alert-error">
                                 <button type="button" class="close" data-dismiss="alert">×</button>
-                                <strong>Error!</strong> You need to create an category!
+                                <strong>Error!</strong> Es necesario crear una categoría!
                             </div>
                         @endif
                     </div>

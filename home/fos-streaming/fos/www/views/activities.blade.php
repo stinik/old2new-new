@@ -5,11 +5,11 @@
         <div class="col-md-12 col-sm-12 col-xs-12">
             <div class="x_panel">
                 <div class="x_title">
-                    <h2>Activities</h2>
+                    <h2>Canales</h2>
                     <div class="clearfix"></div>
                 </div>
                 <div class="">
-                    <a class="btn btn-danger" title="Delete" href="activities.php?delete_all=1">Delete all logs</a>
+                    <a class="btn btn-danger" title="Delete" href="activities.php?delete_all=1">Borrar Logs</a>
                     @if($message)
                         <div class="alert alert-{{ $message['type'] }}">
                             {{ $message['message'] }}
@@ -37,7 +37,7 @@
                                     <td>{{ $activity->user_ip }}</td>
                                     <td>{{ $activity->user_agent }}</td>
                                     <td class="center">
-                                        <a class="btn btn-danger" href="activities.php?delete={{ $activity->id }}" title="Delete" onclick="return confirm('Are you sure?')">Remove</a>
+                                        <a class="btn btn-danger" href="activities.php?delete={{ $activity->id }}" title="Delete" onclick="return confirm('Are you sure?')">Borrar</a>
                                     </td>
                                 </tr>
                             @endforeach
@@ -70,7 +70,7 @@
             $(document).ready(function () {
                 var oTable = $('#example').dataTable({
                     "oLanguage": {
-                        "sSearch": "Search all columns:"
+                        "sSearch": "Buscar Todas Columnas:"
                     },
                     "aoColumnDefs": [
                         {

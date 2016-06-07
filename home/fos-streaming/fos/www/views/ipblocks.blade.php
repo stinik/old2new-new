@@ -5,10 +5,10 @@
         <div class="col-md-12 col-sm-12 col-xs-12">
             <div class="x_panel">
                 <div class="x_title">
-                    <h2>Ip Block </h2>
+                    <h2>Banear IP </h2>
                     <ul class="nav navbar-right panel_toolbox">
                         <a class="btn btn-round btn-primary" href="manage_ipblock.php" title="Add">
-                            Add ipblock
+                            Añadir ip
                         </a>
                     </ul>
                     <div class="clearfix"></div>
@@ -37,7 +37,7 @@
                                     <td>{{ $block->ip }}</td>
                                     <td>{{ $block->description }}</td>
                                     <td class="center">
-                                        <a class="btn btn-info" href="manage_ipblock.php?id={{ $block->id }}" title="Edit">Edit</a>
+                                        <a class="btn btn-info" href="manage_ipblock.php?id={{ $block->id }}" title="Edit">Editar</a>
                                         <a class="btn btn-danger" href="ipblocks.php?delete={{ $block->id }}" title="Delete" onclick="return confirm('Are you sure?')">Remove</a>
                                     </td>
                                 </tr>
@@ -47,7 +47,7 @@
                     @else
                         <div class="alert alert-info">
                             <button type="button" class="close" data-dismiss="alert">×</button>
-                            No ip blocks found
+                            No hay ip baneadas
                         </div>
                     @endif
                 </div>

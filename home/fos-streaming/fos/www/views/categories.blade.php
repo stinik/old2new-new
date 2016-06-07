@@ -5,10 +5,10 @@
                 <div class="col-md-12 col-sm-12 col-xs-12">
                     <div class="x_panel">
                         <div class="x_title">
-                            <h2>Categories </h2>
+                            <h2>Categorias </h2>
                             <ul class="nav navbar-right panel_toolbox">
                                 <a class="btn btn-round btn-primary" href="manage_category.php" title="Add">
-                                    Add category
+                                    Nueva Categoria
                                 </a>
                             </ul>
                             <div class="clearfix"></div>
@@ -24,8 +24,8 @@
                                 <thead>
                                 <tr class="headings">
                                     <th>#</th>
-                                    <th>Name</th>
-                                    <th class=" no-link last"><span class="nobr">Action</span>
+                                    <th>Nombre</th>
+                                    <th class=" no-link last"><span class="nobr">Acciones</span>
                                     </th>
                                 </tr>
                                 </thead>
@@ -36,11 +36,11 @@
                                         <td>{{ $category->name }}</td>
                                         <td class="center">
                                             <a class="btn btn-info" href="manage_category.php?id={{ $category->id }}" title="Edit">
-                                                Edit
+                                                Editar
                                             </a>
 
                                             <a class="btn btn-danger" href="categories.php?delete={{ $category->id }}" title="Delete" onclick="return confirm('Are you sure?')">
-                                                Remove
+                                                Borrar
                                             </a>
                                         </td>
                                     </tr>
