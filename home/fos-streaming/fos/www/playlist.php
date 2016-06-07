@@ -24,7 +24,7 @@ if(isset($_GET['e2'])) {
     foreach($user->categories as $category) {
         foreach($category->streams as $stream) {
             if($stream->running == 1) {
-                echo "#SERVICE 1:0:1:0:0:0:0:0:0:0:http%3A//".$setting->webip."%3A".$setting->webport."/live/".$user->username."/".$user->password."/".$stream->id ."\r\n";
+                echo "#SERVICE 4097:0:1:0:0:0:0:0:0:0:http%3a//".$setting->webip."%3a".$setting->webport."/live/".$user->username."/".$user->password."/".$stream->id.".m3u8" ."\r\n";
                 echo"#DESCRIPTION " . $stream->name ."\r\n";
             }
         }
