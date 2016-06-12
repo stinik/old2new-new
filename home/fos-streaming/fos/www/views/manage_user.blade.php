@@ -78,7 +78,7 @@
                     @else
                         <div class="alert alert-error">
                             <button type="button" class="close" data-dismiss="alert">×</button>
-                            <strong>Error!</strong> You need to create an category!
+                            <strong>Error!</strong> Necesitas Crear Una Categoria
                         </div>
                     @endif
                 </div>

@@ -8,7 +8,7 @@
                         <h2>Transcode profiles </h2>
                         <ul class="nav navbar-right panel_toolbox">
                             <a class="btn btn-round btn-primary" href="manage_transcode.php" title="Add">
-                                Add transcode
+                                Añadir transcode
                             </a>
                         </ul>
                         <div class="clearfix"></div>
@@ -53,7 +53,7 @@
                         @else
                             <div class="alert alert-info">
                                 <button type="button" class="close" data-dismiss="alert">×</button>
-                                No transcodes found
+                                No hay transcodes
                             </div>
                         @endif
                     </div>

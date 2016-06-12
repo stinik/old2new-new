@@ -8,7 +8,7 @@
                     <h2>Admins </h2>
                     <ul class="nav navbar-right panel_toolbox">
                         <a class="btn btn-round btn-primary" href="manage_admin.php" title="Add">
-                            Add admin
+                            Añadir admin
                         </a>
                     </ul>
                     <div class="clearfix"></div>
@@ -25,8 +25,8 @@
                             <thead>
                             <tr class="headings">
                                 <th>#</th>
-                                <th>Username</th>
-                                <th class=" no-link last"><span class="nobr">Action</span></th>
+                                <th>Nombre</th>
+                                <th class=" no-link last"><span class="nobr">Accion</span></th>
                             </tr>
                             </thead>
                             <tbody>

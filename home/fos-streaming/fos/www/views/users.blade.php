@@ -49,7 +49,7 @@
                                         @if($user->active)
                                             <span class="label label-success">Activado</span>
                                         @else
-                                            <span class="label label-important">Not Activado</span>
+                                            <span class="label label-important">No Activado</span>
                                         @endif
                                     </td>
                                     <td class="center">
@@ -88,7 +88,7 @@
                     @else
                         <div class="alert alert-info">
                             <button type="button" class="close" data-dismiss="alert">×</button>
-                            No users found
+                            No hay usuarios
                         </div>
                     @endif
                 </div>

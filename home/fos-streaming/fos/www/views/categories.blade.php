@@ -50,7 +50,7 @@
                                 @else
                                     <div class="alert alert-info">
                                         <button type="button" class="close" data-dismiss="alert">×</button>
-                                        No categories found
+                                        No hay categories
                                     </div>
                                 @endif
                         </div>
